@@ -1,4 +1,7 @@
+#Command line code for Advance Calculator
+#Importing math as we use sqrt() function
 import math
+#Defining the functions of operations
 def add(numbers):
     result=numbers[0]
     for num in numbers[1:]:
@@ -29,6 +32,7 @@ def square_root(s):
 def square(s):
     result=s**2
     return result
+#defining main function for calculation
 def cal():
     print("WELCOME TO ADVANCE CALCULATOR!")
     while True:
@@ -40,13 +44,13 @@ def cal():
         print("5.Square root")
         print("6.Square")
         print("if wanna quit,type 'q'")
-
+#Taking input from user
         choice=input()
 
         if choice=="q":
             print("Goodbye, have a nice day!")
             break
-
+#Taking numbers as input from user
         if choice in ['1','2','3','4']:
             numbers=[]
             while True:
